@@ -52,6 +52,7 @@ h1 {
 
 .row {
 	width: 100%;
+	padding: 15px;
 }
 
 .chicken, .beef, .sushi {
@@ -72,9 +73,6 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
 	.chicken, .beef {
 		width: 50%;
-	}
-	.beef {
-		float: right;
 	}
 	.sushi {
 		width: 100%;
