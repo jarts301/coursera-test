@@ -3,10 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Cube Summation by Julio Sánchez</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <script type="text/javascript" charset="utf-8" src="scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/script.js"></script>
   </head>
   <body>
-	<h1>Cube Summation by Julio Sanchez</h1>
-	
+	<h1>Cube Summation by Julio Sánchez</h1>
+	<p>Test-cases:
+	<input id="testCases" type="number" min="1" max="50" value="0" oninput="onTestCaseChange(this)" required>
+  <p>
+  <div id="paramsDiv">
+    
+  </div>
+  <h3>Operations:</h3>
+  <p>UPDATE x y z val or QUERY x1 y1 z1 x2 y2 z2</p>
+  <div id="operationsDiv">
+    
+  </div>
+
+  <button onclick="calculate()">Calcular</button>
+
+  <h3>Results:</h3>
+  <div id="resultsDiv">
+    
+  </div>
+
   </body>
 </html>
