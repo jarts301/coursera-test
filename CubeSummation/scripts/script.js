@@ -62,7 +62,9 @@ function onMChange(object){
         operationsDiv.removeChild(operationsDiv.firstChild);
     }
 
-	if(value>=1 && value<=1000){
+    generateOperationInputs(getMSum(),operationsDiv);
+
+	/*if(value>=1 && value<=1000){
 		generateOperationInputs(value,operationsDiv);
 	}else{
 		if(value<1){
@@ -73,11 +75,11 @@ function onMChange(object){
 			object.value="1000";
 			generateOperationInputs(1000,operationsDiv);
 		}
-	}
+	}*/
 }
 
 function generateOperationInputs(value,operationsDiv){
-		for (var i = 0; i < getMSum(); i++) {
+		for (var i = 0; i < value; i++) {
 			var input = document.createElement("input");
 			input.placeholder = "Ej: QUERY 1 1 1 3 3 3";
 			input.required=true;
@@ -136,7 +138,7 @@ function getMSum(){
 	var list = paramsDiv.getElementsByTagName("input");
 
 	for (var i = 0; i < list.length-1; i=i+2) {
-		result=result+list[i+1].value;
+		result=result+ parseInt(list[i+1].value);
 	}
 
 	return result;
