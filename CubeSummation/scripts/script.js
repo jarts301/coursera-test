@@ -1,5 +1,5 @@
 
-var restUrl="localhost:8080/";
+var restUrl="http://52.204.1.104/CubeSummationBackend/";
 
 function onTestCaseChange(object){
 	var value = object.value;
