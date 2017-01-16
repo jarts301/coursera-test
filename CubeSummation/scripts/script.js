@@ -77,14 +77,13 @@ function onMChange(object){
 }
 
 function generateOperationInputs(value,operationsDiv){
-		for (var i = 0; i < value; i++) {
+		for (var i = 0; i < getMSum(); i++) {
 			var input = document.createElement("input");
 			input.placeholder = "Ej: QUERY 1 1 1 3 3 3";
 			input.required=true;
 			operationsDiv.appendChild(input);
 			operationsDiv.appendChild(document.createElement("br"));
 		}
-		operationsDiv.appendChild(document.createElement("br"));
 }
 
 function calculate(){
@@ -95,7 +94,6 @@ function calculate(){
     var t = document.getElementById("testCases").value;
     var params = getParams();
     var operations = getOperations();
-    alert(operations);
 
     $.getJSON(restUrl + "performOperations?t="+t+"&params="+params+"&operations="+operations, function (data) {
     	for (var i = 0; i < data.list.length; i++) {
@@ -129,5 +127,17 @@ function getOperations(){
 		result=result+replaced+";";
 	}
 
-	return result.substring(0,result.length-1);
+	return result.substring(0,result.length-1).toUpperCase();
+}
+
+function getMSum(){
+	var result=0;
+	var paramsDiv =  document.getElementById("paramsDiv");
+	var list = paramsDiv.getElementsByTagName("input");
+
+	for (var i = 0; i < list.length-1; i=i+2) {
+		result=result+list[i+1].value;
+	}
+
+	return result;
 }
