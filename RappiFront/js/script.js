@@ -1,7 +1,7 @@
 var jsonUrl ="https://jarts301.github.io/coursera-test/RappiFront/data.json";
 
 function loadCategories(){
-	var selCategories = document.getElementById("categorias");
+	var selCategories = document.getElementById("categoria");
 	deleteAll(selCategories);
 
 	$.getJSON(jsonUrl, function (data) {
@@ -20,6 +20,14 @@ function loadCategories(){
 
     });
 
+}
+
+function filter(){
+	var buscar = document.getElementById("buscar").value;
+	var categoria = document.getElementById("categoria").value;
+	var orden = document.getElementById("orden").value;
+	var estado = document.getElementById("estado").value;
+	var precio = document.getElementById("precio").value;
 }
 
 function loadProducts(){
@@ -64,7 +72,7 @@ function generateProductItem(image, name, price, bestS, description, disp){
 	var divBS = document.createElement("div");
 	divBS.className = "col-lg-2 col-md-2 col-sm-2 col-xs-12";
 	var imgBS =  document.createElement("img");
-	imgBS.width = "25px";
+	imgBS.width = "25";
 	imgBS.src = "images/bs.png";
 	if(bestS){
 		divBS.appendChild(imgBS);
@@ -110,6 +118,7 @@ function generateProductItem(image, name, price, bestS, description, disp){
 }
 
 function deleteAll(object){
+	if(object!=null)
 	while (object.firstChild) {
         object.removeChild(object.firstChild);
     }
