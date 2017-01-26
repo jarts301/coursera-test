@@ -1,0 +1,113 @@
+{
+    "subscribers": [
+        {
+            "organization": {
+                "sector": "Petróleo",
+                "city": "Bogotá",
+                "name": "Ecopetrol",
+                "address": "Calle 45 No. 43 -78",
+                "country": "Colombia",
+                "industry": "Hidrocarburos",
+                "size": "Grande",
+                "tributaryInformation": "Persona jurídica",
+                "subsector": "Excavación"
+            },
+            "invoicing": {
+                "cellPhone": "4356247",
+                "observations": "",
+                "name": "Juan",
+                "lastName": "Díaz",
+                "landlinePhone": "4356247",
+                "invoicingAddress": "Calle 89 No. 97 - 90",
+                "email": "email@email.com",
+                "invoicingEmail": "email@email.com"
+            },
+            "subscription": {
+                "dataSourceSubscription": "A",
+                "dataSourceAvailable": "A",
+                "invoicing": "A",
+                "usersAvailable": "A",
+                "usersAssets": "A",
+                "paymentMethod": "Efectivo",
+                "lapse": "1 mes",
+                "usersSubscription": "A",
+                "value": 1320000.0,
+                "dataSourceAssets": "A",
+                "lastPaymentDate": "2017-01-20",
+                "usersProcessAvailable": "A",
+                "nextPaymentDate": "2017-01-20",
+                "partner": "Juan Caballero",
+                "usersProcessAssets": "A",
+                "usersProcessSubscription": "A",
+                "isExpired": false
+            },
+            "id": 1,
+            "sponsor": {
+                "city": "Bogotá",
+                "position": "Position",
+                "facebook": "",
+                "name": "Clara",
+                "country": "Colombia",
+                "lastName": "Avila",
+                "twitter": "",
+                "linkedIn": "",
+                "birthDate": "2017-01-20"
+            }
+        },
+        {
+            "organization": {
+                "sector": "Sector",
+                "city": "Bogotá",
+                "name": "Petrobras",
+                "address": "Calle 78 No. 34 - 21",
+                "country": "Colombia",
+                "industry": "Hidrocarburos",
+                "size": "Grande",
+                "tributaryInformation": "Persona jurídica",
+                "subsector": "Subsector"
+            },
+            "invoicing": {
+                "cellPhone": "4639875",
+                "observations": "Observations",
+                "name": "Patricia",
+                "lastName": "Salas",
+                "landlinePhone": "4639875",
+                "invoicingAddress": "Calle 67 No. 45 - 98",
+                "email": "email@email.com",
+                "invoicingEmail": "email@email.com"
+            },
+            "subscription": {
+                "dataSourceSubscription": "A",
+                "dataSourceAvailable": "A",
+                "invoicing": "A",
+                "usersAvailable": "A",
+                "usersAssets": "A",
+                "paymentMethod": "Efectivo",
+                "lapse": "1 mes",
+                "usersSubscription": "A",
+                "value": 183000000.0,
+                "dataSourceAssets": "A",
+                "lastPaymentDate": "2017-01-21",
+                "usersProcessAvailable": "A",
+                "nextPaymentDate": "2017-01-21",
+                "partner": "Nicolás Escobar",
+                "usersProcessAssets": "A",
+                "usersProcessSubscription": "A",
+                "isExpired": false
+            },
+            "id": 2,
+            "sponsor": {
+                "city": "Medellín",
+                "position": "Jefe de mercadeo",
+                "facebook": "https://facebook.com/",
+                "name": "Carlos",
+                "country": "Colombia",
+                "lastName": "Gómez",
+                "twitter": "https://twitter.com/",
+                "linkedIn": "https://linkedin.com/",
+                "birthDate": "2017-01-21"
+            }
+        }
+    ],
+    "success": true
+}
