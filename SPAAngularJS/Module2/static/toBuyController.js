@@ -12,7 +12,6 @@
 
     toBuy.buyItem = function(itemIndex){
       ShoppingListCheckOffService.buyItem(itemIndex);
-      toBuy.toBuyItems = ShoppingListCheckOffService.getToBuyItems();
     }
 
   }
