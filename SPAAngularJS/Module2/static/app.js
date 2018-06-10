@@ -9,11 +9,11 @@
 
     var toBuyItems = [
       { name: "cookies", quantity: 10 },
-      { name: "cheese", quantity: 2 },
-      { name: "banana", quantity: 5 },
-      { name: "orange", quantity: 9 },
+      { name: "cheeses", quantity: 2 },
+      { name: "bananas", quantity: 5 },
+      { name: "oranges", quantity: 9 },
       { name: "salmon", quantity: 1 },
-      { name: "egg", quantity: 12 }
+      { name: "eggs", quantity: 12 }
     ];
 
     var boughtItems = [];
