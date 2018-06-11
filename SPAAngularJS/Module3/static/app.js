@@ -18,7 +18,7 @@
     this.search = function(){
       narrowItDown.noResults=false;
       narrowItDown.searching=true;
-      
+
       if(narrowItDown.searchTerm){
 
         var promise = MenuSearchService.getMatchedMenuItems(narrowItDown.searchTerm);
@@ -68,10 +68,7 @@
 
         for (let menuItem of result.data.menu_items) {
 
-          if(menuItem.description.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0
-            || menuItem.name.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0
-            || menuItem.short_name.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0){
-
+          if(menuItem.description.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0){
               foundItems.push(menuItem);
           }
         }
