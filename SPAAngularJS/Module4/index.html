@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>MenuApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Style imports -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- End Style imports -->
+
+</head>
+
+<body ng-app="MenuApp">
+
+  <nav class="navbar navbar-default navbar-fixed-top navstyle">
+    <div class="container">
+      <a class="navbar-brand">Menu App</a>
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#" ui-sref="home">Home</a></li>
+        <li role="presentation"><a href="#" ui-sref="categories">Categories</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+  <!-- AngularJS Import -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Modules -->
+  <script src="src/menu-app/menuapp.module.js"></script>
+  <script src="src/menu-app/data.module.js"></script>
+
+  <!-- Components -->
+  <script src="src/menu-app/items.component.js"></script>
+  <script src="src/menu-app/categories.component.js"></script>
+
+  <!-- Services -->
+  <script src="src/menu-app/menudata.service.js"></script>
+
+  <!-- Controllers -->
+  <script src="src/menu-app/main-items.controller.js"></script>
+  <script src="src/menu-app/main-categories.controller.js"></script>
+
+  <!-- Routes -->
+  <script src="src/routes.js"></script>
+
+</body>
+
+</html>
+
+<!-- <div id="narrowItDown" class="container" ng-controller="NarrowItDownController as narrowItDown">
+
+<div class="form-group">
+<input type="text" ng-model="narrowItDown.searchTerm" placeholder="search term" class="form-control">
+</div>
+<div class="form-group narrow-button">
+<button ng-click="narrowItDown.search()" class="btn btn-primary">Narrow It Down For Me!</button>
+</div>
+
+<h4 ng-show="narrowItDown.noResults">Nothing found</h4>
+<h4 ng-show="narrowItDown.searching">Searching...</h4>
+
+<found-items found="narrowItDown.found" on-remove="narrowItDown.removeItem(index)"></found-items>
+<hr/>
+</div> -->

@@ -1,0 +1,17 @@
+
+<div class="col-md-12">
+  <div class="row">
+    <div ng-repeat="item in $ctrl.items.data.menu_items" class="col-md-12">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3> {{ item.name }} <small>({{ item.short_name }})</small> </h3>
+          <p ng-show="item.price_large">Price large: {{ item.price_large | currency:"$"}}</p>
+          <p ng-show="item.price_small">Price small: {{ item.price_small | currency:"$"}}</p>
+          <p> {{ item.description }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <pre>{{ $ctrl.items | json }}</pre> -->

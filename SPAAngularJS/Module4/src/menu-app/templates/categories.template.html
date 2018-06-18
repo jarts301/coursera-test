@@ -1,0 +1,12 @@
+
+<div class="col-md-12">
+  <div class="row list-group">
+    <a ng-repeat="categorie in $ctrl.categories.data"
+    class="col-sm-6 col-md-4 list-group-item"
+    ui-sref="items({categoryId: categorie.short_name})"
+    ng-click="$event.stopPropagation()">{{ categorie.name }}<small>({{ categorie.short_name }})</small>
+    </a>
+  </div>
+</div>
+
+<!-- <pre>{{ $ctrl.categories | json }}</pre> -->
